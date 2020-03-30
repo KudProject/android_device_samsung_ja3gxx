@@ -17,6 +17,9 @@
 
 LOCAL_PATH := device/samsung/ja3gxx
 
+# Use KudProject dev certificates if available
+-include vendor/kud/config/certs.mk
+
 # overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
